@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+  background: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+}

@@ -21,7 +21,7 @@ function App() {
   const [formData, setFormData] = useState({});
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/form').then(res => {
+    axios.get('https://zeptohsolutionsbackend.onrender.com/api/form').then(res => {
       const validFields = res.data
         .map(f => {
           try {
@@ -42,7 +42,7 @@ function App() {
   };
 
   const handleSubmit = () => {
-    axios.post('http://localhost:5000/api/submit', formData).then(res => {
+    axios.post('https://zeptohsolutionsbackend.onrender.com/api/submit', formData).then(res => {
       alert(res.data.message);
     });
   };
